@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "5b3e3b91-713a-4101-8020-01e81a522a74",
+		"name": "ORION-LD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19919066"
+	},
+	"item": [
+		{
+			"name": "CREATE ENTITY",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Rome:D2\",\n  \"type\": \"WaterQualityObserved\",\n  \"NO3\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  },\n  \"conductivity\": {\n    \"type\": \"Property\",\n    \"value\": 0.005\n  },\n  \"dateObserved\": {\n    \"type\": \"Property\",\n    \"value\": {\n      \"@type\": \"DateTime\",\n      \"@value\": \"2017-01-31T06:45:00Z\"\n    }\n  },\n  \"location\": {\n    \"type\": \"GeoProperty\",\n    \"value\": {\n      \"type\": \"Point\",\n      \"coordinates\": [\n        -5.993307,\n        37.362882\n      ]\n    }\n  },\n  \"measurand\": {\n    \"type\": \"Property\",\n    \"value\": [\n      \"NO3, 0.01, M1, Concentration of Nitrates\"\n    ]\n  },\n  \"pH\": {\n    \"type\": \"Property\",\n    \"value\": 7.4\n  },\n  \"temperature\": {\n    \"type\": \"Property\",\n    \"value\": 24.4\n  },\n  \"flow\": {\n    \"type\": \"Property\",\n    \"value\": 127.53\n  },\n  \"alkalinity\": {\n    \"type\": \"Property\",\n    \"value\": 0.1\n  },\n  \"TKN\": {\n    \"type\": \"Property\",\n    \"value\": 1.0\n  },\n  \"NO2\": {\n    \"type\": \"Property\",\n    \"value\": 0.09\n  },\n  \"Al\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  }, \n  \"As\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"B\": {\n    \"type\": \"Property\",\n    \"value\": 0.2\n  },\n  \"Ba\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cd\": {\n    \"type\": \"Property\",\n    \"value\": 0.001\n  },\n  \"Cr\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cu\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Fe\": {\n    \"type\": \"Property\",\n    \"value\": 7.4\n  },\n  \"fluoride\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Hg\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"THC\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Ni\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"TO\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  },\n  \"Pb\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Se\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Sn\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"sulphate\": {\n    \"type\": \"Property\",\n    \"value\": 143.3\n  },\n  \"sulphite\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Zn\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\"@context\": [\n        \"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld\"\n    ]\n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE ENTITY 2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": \"urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D3\",\n  \"type\": \"WaterQualityObserved\",\n  \"NO3\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  },\n  \"conductivity\": {\n    \"type\": \"Property\",\n    \"value\": 0.005\n  },\n  \"dateObserved\": {\n    \"type\": \"Property\",\n    \"value\": {\n      \"@type\": \"DateTime\",\n      \"@value\": \"2017-01-31T06:45:00Z\"\n    }\n  },\n  \"location\": {\n    \"type\": \"GeoProperty\",\n    \"value\": {\n      \"type\": \"Point\",\n      \"coordinates\": [\n        -5.993307,\n        37.362882\n      ]\n    }\n  },\n  \"measurand\": {\n    \"type\": \"Property\",\n    \"value\": [\n      \"NO3, 0.01, M1, Concentration of Nitrates\"\n    ]\n  },\n  \"pH\": {\n    \"type\": \"Property\",\n    \"value\": 7.4\n  },\n  \"temperature\": {\n    \"type\": \"Property\",\n    \"value\": 24.4\n  },\n  \"flow\": {\n    \"type\": \"Property\",\n    \"value\": 127.53\n  },\n  \"alkalinity\": {\n    \"type\": \"Property\",\n    \"value\": 0.1\n  },\n  \"TKN\": {\n    \"type\": \"Property\",\n    \"value\": 1.0\n  },\n  \"NO2\": {\n    \"type\": \"Property\",\n    \"value\": 0.09\n  },\n  \"N-TOT\": {\n    \"type\": \"Property\",\n    \"value\": 6.0\n  },\n  \"P-TOT\": {\n    \"type\": \"Property\",\n    \"value\": 0.6\n  },\n  \"P-PO4\": {\n    \"type\": \"Property\",\n    \"value\": 0.5\n  },\n  \"Al\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  }, \n  \"As\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"B\": {\n    \"type\": \"Property\",\n    \"value\": 0.2\n  },\n  \"Ba\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cd\": {\n    \"type\": \"Property\",\n    \"value\": 0.001\n  },\n  \"Cr\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cr-III\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cr-VI\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Cu\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Fe\": {\n    \"type\": \"Property\",\n    \"value\": 7.4\n  },\n  \"fluoride\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Hg\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"THC\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Ni\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"TO\": {\n    \"type\": \"Property\",\n    \"value\": 0.01\n  },\n  \"Pb\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Se\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"Sn\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"sulphate\": {\n    \"type\": \"Property\",\n    \"value\": 143.3\n  },\n  \"sulphite\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\n  \"anionic-surfactants\": {\n    \"type\": \"Property\",\n    \"value\": 0.3\n  },\n  \"cationic-surfactants\": {\n    \"type\": \"Property\",\n    \"value\": 0.2\n  },\n  \"non-ionic-surfactants\": {\n    \"type\": \"Property\",\n    \"value\": 0.1\n  },\n  \"total-surfactants\": {\n    \"type\": \"Property\",\n    \"value\": 0.3\n  },\n  \"Zn\": {\n    \"type\": \"Property\",\n    \"value\": 0.0\n  },\"@context\": [\n        \"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context.jsonld\"\n    ]\n   \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QUERY ENTITIES - TYPE",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities?type=WaterQualityObserved&limit=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "WaterQualityObserved"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QUERY ENTITIES - QUERY",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities?q=temperature<30",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "temperature<30"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QUERY ENTITIES - GEO QUERY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "NGSILD-Tenant",
+						"value": "tenant-01",
+						"type": "text"
+					},
+					{
+						"key": "Link",
+						"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/context.jsonld>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities?q=atmosphericPressure>=200",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "atmosphericPressure>=200"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QUERY ENTITIES-ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities/urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Rome:D2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities",
+						"urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Rome:D2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QUERY ENTITIES - QUERY",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Link",
+						"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.Weather/master/context.jsonld>"
+					},
+					{
+						"key": "NGSILD-Tenant",
+						"value": "tenant-01",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities?type=WeatherObserved&geometry=Point&coordinates=[-2.754444444, 12.641833233]&georel=near;maxDistance==100000000000000&options=keyValues",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "WeatherObserved"
+						},
+						{
+							"key": "geometry",
+							"value": "Point"
+						},
+						{
+							"key": "coordinates",
+							"value": "[-2.754444444, 12.641833233]"
+						},
+						{
+							"key": "georel",
+							"value": "near;maxDistance==100000000000000"
+						},
+						{
+							"key": "options",
+							"value": "keyValues"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SUBSCRIPTION",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/ld+json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"description\": \"Notify me of low temperature on\",\n  \"type\": \"Subscription\",\n  \"entities\": [{\"type\": \"WaterQualityObserved\"}],\n  \"watchedAttributes\": [\"pH\"],\n  \"q\": \"pH>2\",\n  \"notification\": {\n    \"attributes\": [\"temperature\", \"pH\"],\n    \"format\": \"normalized\",\n    \"endpoint\": {\n      \"uri\": \"https://mypro.free.beeceptor.com/todos/\",\n      \"accept\": \"application/json\"\n    }\n  },\n   \"@context\": \"https://uri.etsi.org/ngsi-ld/v1/ngsi-ld-core-context-v1.6.jsonld\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/subscriptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"subscriptions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Link",
+						"value": "<https://raw.githubusercontent.com/smart-data-models/dataModel.WaterQuality/master/context.jsonld>",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"pH\": {\n    \"value\": 112.4,\n    \"type\": \"Property\"\n  }\n}"
+				},
+				"url": {
+					"raw": "http://localhost:1026/ngsi-ld/v1/entities/urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D3/attrs/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1026",
+					"path": [
+						"ngsi-ld",
+						"v1",
+						"entities",
+						"urn:ngsi-ld:WaterQualityObserved:waterqualityobserved:Sevilla:D3",
+						"attrs",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
